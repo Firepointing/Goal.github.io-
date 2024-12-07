@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High School Goal Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>High School Goal Tracker</h1>
+    <p>Set and track your academic goals!</p>
+  </header>
+
+  <main>
+    <!-- Goal Input Form -->
+    <section id="goal-form">
+      <h2>Add a New Goal</h2>
+      <form id="goalTrackerForm">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" required>
+          <option value="" disabled selected>Select a Subject</option>
+          <option>Mathematics</option>
+          <option>English</option>
+          <option>Kiswahili</option>
+          <option>Biology</option>
+          <option>Physics</option>
+          <option>Chemistry</option>
+          <option>History</option>
+          <option>Geography</option>
+          <option>CRE</option>
+          <option>Business Studies</option>
+          <option>Agriculture</option>
+        </select>
+
+        <label for="goal">Goal:</label>
+        <input type="text" id="goal" placeholder="e.g., Score 80% in Biology" required>
+
+        <button type="submit">Add Goal</button>
+      </form>
+    </section>
+
+    <!-- Goal List -->
+    <section id="goal-list">
+      <h2>Your Goals</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Goal</th>
+            <th>Progress (%)</th>
+          </tr>
+        </thead>
+        <tbody id="goalData">
+          <!-- Goals will be dynamically added here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 High School Goal Tracker</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
